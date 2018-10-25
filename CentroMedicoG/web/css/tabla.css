@@ -1,0 +1,164 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31/08/2016, 11:39:05 AM
+    Author     : ninus69
+*/
+
+            /* overall */
+            .datagrid table {
+                border-collapse: collapse;
+                text-align: left;
+                width: 100%;
+                overflow: hidden;
+            }/* DEFAULT MANDATORY EVERY TABLE */
+            .datagrid {
+                font: normal 12px/150% Arial, Helvetica, sans-serif; /* font,font-size */
+                background: #fff; /* table-background-color */
+                border: 3px solid #069; /* border width, border color */
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px; /* border-radius */
+            }
+
+            .datagrid table td, .datagrid table th {
+                padding: 3px 10px;
+            }/* cellpadding */
+
+            /* thead */
+            .datagrid table thead th {
+                /* thead-top-gradient-color, thead-lower-gradient-color */
+                background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557f) );
+                background: -moz-linear-gradient( center top, #006699 5%, #00557f 100% );
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557f');
+                background-color: #006699; /* set to lower gradient color */
+                color: #ebebeb; /* header-font-color */
+                border-left: 1px solid #006699; /* thead-vert-line-size, thead-vert-line-color */
+                font-size: 15px; /* thead-font-size */
+            }
+            .datagrid table thead th:first-child {
+                border: none; /* MANDATORY */
+            }
+
+            /* tbody */
+            .datagrid table tbody td {
+                color: #00496B; /* tbody-color */
+                border-left: 1px solid #E1EEF4; /* tbody-vert-line-size, tbody-vert-line-color */
+                text-align: left; /* tbody-text-align */
+            }
+
+            .datagrid table tbody .alt {
+                background: #E1EEF4; /* tbody-row-alt-background-color */
+            }
+            .datagrid table tbody .alt td {
+                background: #E1EEF4;
+                color: #6B332B;
+            }
+            .datagrid table tbody td:first-child {
+                border: none; /* MANDATORY */
+            }
+
+            /* tfooter */
+            .paging-nav {
+                border-top: 1px solid #069; /* tfoot-top-border-width, tfoot-top-border-color */
+                background: #E1EEF4; /* tfoot-background-color */
+                padding: 5px; /* tfoot-padding */
+            }
+
+            .datagrid table tfoot td {
+                padding: 0; /* MANDATORY */
+            }
+
+            /* paging */
+            .paging-nav {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                text-align: right;
+            }
+            .paging-nav  li {
+                display: inline;
+            }
+            .paging-nav a {
+                text-decoration: none;
+                color: #fff;
+                display: inline-block;
+                padding: 2px 8px;
+                margin: 1px;
+                /*border: 1px solid #069;*/ /* border width, border color */
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px; /* border-radius */
+                background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557f) );
+                background: -moz-linear-gradient( center top, #006699 5%, #00557f 100% );
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557f');
+                background-color: #006699;
+            }
+            .paging-nav .active, .paging-nav a:hover {
+                text-decoration: none;
+                color: #fff;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px; /* border-radius */
+                background: none;
+                background-color: #006699;
+            }
+
+            .datagrid {
+                margin-left: auto;
+                margin-right: auto;/*centrar*/
+                /*width: 535px;*/
+                border: 3px solid #069;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
+            }
+
+
+            #cuerpo {
+                width: 100%;
+            }
+            #cuerpo .cuerpo1{
+                width: 30%;
+                float: left;
+                margin-top: 35px;
+            }
+            #cuerpo .cuerpo2{
+                float: left;
+            }
+            div h1{
+                color: white;
+            }
+            div form{
+                color: white;
+            }
+
+            /*marcado de celdas*/
+            .desmarcado{ 
+                background: transparent; 
+            } 
+            .marcado{ 
+                background: #b12b3b; 
+            } 
+
+           /*input buscador */
+            .buscador input {
+
+                width:220px; 
+                padding:5px 8px;
+            }
+
+            .buscador input:focus {
+                padding-right:70px;
+            }
+
+            .buscador input { /* add this to the already existing style */
+                -moz-transition: padding .25s; 
+                -webkit-transition: padding .25s; 
+                -o-transition: padding .25s;
+                transition: padding .25s;
+            }
+
